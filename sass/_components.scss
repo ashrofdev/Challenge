@@ -1,0 +1,359 @@
+.container {
+
+    @media screen and (max-width: $bp-small) {
+       text-align: center;
+    }
+
+
+    &  .head {
+        align-content: center; 
+        justify-content: center; 
+        margin-top: 5rem;
+        @media screen and (max-width: $bp-small) {
+            padding: 0 2rem;
+        }
+
+        &  .logo-side {
+
+            &  h1 {
+                font-size: 4rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: $cyan;
+            }
+           
+        }
+        &  .cta-side {
+            align-self: center; 
+
+            &  .link {
+                text-decoration: none;
+                color: $primary;
+                padding: .7rem 2.5rem;
+                border: 1px solid $primary;
+                border-radius: 10rem;
+                font-size: 1.5rem;
+                transition: all .5s;
+
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+               
+            }
+         }
+    }
+
+    &  .get-started {
+        margin-top: 15rem;
+        text-align: center;
+
+        @media screen and (max-width: $bp-small) {
+            padding: 0 2rem;
+        }
+
+        &  h1 {
+            font-size: 4rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: $cyan;
+        }
+        &  p {
+            padding: 3rem 30rem;
+            text-align: center;
+            font-size: 1.8rem;
+            @media screen and (max-width: $bp-small) {
+                padding:  2rem 0;
+            }
+            
+            @media screen and (max-width: $bp-medium) {
+                padding:  6rem 0;
+            }
+        }
+        .btn {
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                padding: 2rem 8rem;
+                display: inline-block;
+                border-radius: 10rem;
+                color: $white;
+                font-size: 1.7rem;
+                box-shadow: 0 1rem 1rem rgba(51, 50, 50, 0.61);
+                transition: all 6s;
+                position: relative;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 5rem
+            }
+            
+            &:hover {
+                background-color: rgba(250, 75, 171, 0.733);
+                transform: scaleX(.8) scaleY(.8);
+        
+                &::after {
+                    transform: scaleX(1.5) scaleY(2);
+                    opacity: 0;
+                }
+            }
+            &:active {
+                transform: scaleX(.9) scaleY(.9);
+            }
+            
+            
+            &--white {
+                background-color: $primary;
+        
+                &::after {
+                    background-color: $primary;
+                }
+            }
+        
+           
+            
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 10rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .8s;
+            }
+        }
+        .big {
+            &  .biggs {
+
+                &  .bigs {
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &  .info {
+            color: #777;
+            font-size: 2rem;
+            margin: 3rem 0;
+
+            &  h2 {
+                font-size: 7rem;
+                color: $cyan;
+
+                @media screen and (max-width: $bp-small) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        
+        
+        
+    }
+    .grow-together {
+       
+
+        &  .grow {
+            align-self: center;
+
+            &  h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                color: $cyan;
+            }
+
+            &  p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &  .conversation {
+        @media screen and (max-width: $bp-small) {
+            padding: 2rem 10rem;
+        }
+        &  .grow {
+            align-self: center;
+
+            &  h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                color: $cyan;
+            }
+
+            &  p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &  .users {
+        background-color: $l-blue;
+       
+
+        
+        &  .grow {
+            align-self: center;
+
+            &  h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                color: $cyan;
+            }
+
+            &  p {
+                font-size: 1.7rem;
+            }
+        }
+        &  .content {
+            @media screen and (max-width: $bp-small) {
+                padding: 2rem 10rem;
+            }
+        }
+    }
+
+    &  .ready-cta {
+        margin-bottom: 5rem;
+
+        &  h1 {
+            margin-bottom: 5rem;
+        }
+    }
+
+    .footer {
+        background-color: $cyan;
+        @media screen and (max-width: $bp-small) {
+           text-align: left;
+        }
+        &  .content {
+            padding: 3rem 2rem;
+        }
+        
+        &  .icon {
+            color: $primary;
+        }
+
+        &  .grow {
+            &  h2 {
+                color: $white;
+                margin-bottom: 3rem;
+                font-size: 5rem;
+                @media screen and (max-width: $bp-small) {
+                    font-size: 3.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+            &  p {
+                padding: 0 40rem 0 0;
+                font-size: 1.7rem;
+                margin-bottom: 3rem;
+                @media screen and (max-width: $bp-small) {
+                    padding: 0;
+                }
+                @media screen and (max-width: $bp-medium) {
+                    padding-right: 15rem;
+                }
+
+            }
+        }
+
+        &  .photo {
+
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 3rem;
+            }
+
+            &  h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+               
+            }
+            &  p {
+                font-size: 1.7rem;
+                padding-right: 10rem;
+                margin-bottom: 3rem;
+                @media screen and (max-width: $bp-small) {
+                    padding: 0;
+                }
+            }
+
+            &  form {
+                @media screen and (max-width: $bp-small) {
+                    text-align: right;
+                }
+
+                &  .input {
+                    padding: 1rem 5rem 1rem 0;
+                    border: none;
+                    border-radius: 3px;
+                    transition: all .5s;
+                    @media screen and (max-width: $bp-small) {
+                        margin-left: 10rem;
+                    }
+                    @media screen and (max-width: $bp-largest) {
+                        margin-left: 5rem;
+                    }
+                    @media screen and (max-width: $bp-large) {
+                        margin-left: 3rem;
+                    }
+
+                    &:focus {
+                        border: 3px solid $primary;
+                    }
+                }
+                &  .button {
+                    border: none;
+                    border-radius: .5rem;
+                    margin-left: 1rem;
+                    background-color: $primary;
+                    padding: 1rem 3rem;
+                    font-size: 1.4rem;
+                    color: $white;
+                    transition: all .2s;
+                    @media screen and (max-width: $bp-small) {
+                        margin-left: 20rem;
+                        margin-top: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: rgb(141, 6, 96);
+                    }
+                }
+            }
+        }
+    }
+    &  p {
+       
+        &  .icon {
+            margin-right: 1rem;
+        }
+    }
+   
+    &  .photo {
+        
+        &  .phot {
+            &  .image {
+                width: 100%;
+                height: 100%;
+                background-color: $l-blue;
+            }
+        }
+        &  .spe {
+            &  .image {
+                width: 100%;
+                height: 100%;
+                background-color: $white;
+            }
+        }
+    }
+}
+.hl {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}

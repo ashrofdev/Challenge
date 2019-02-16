@@ -1,0 +1,248 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(10rem, 1fr) ;
+    
+    @media screen and (max-width: $bp-medium) {
+        grid-template-columns: minmax(5rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(5rem, 1fr) ;
+    }
+    
+    @media screen and (max-width: $bp-small) {
+        grid-template-columns: minmax(1rem, 1fr) [middle-start] repeat(8, minmax(1rem, 14rem)) [middle-end] minmax(1rem, 1fr) ;
+    }
+   
+
+
+    &  .head {
+        grid-column: middle-start / middle-end;
+
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+            margin-top: 1rem;
+        }
+
+    }
+
+    &  .get-started {
+        grid-column: middle-start / middle-end;
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+        }
+
+        &  .big {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 15rem);
+            @media screen and (max-width: $bp-small) {
+                grid-template-rows: repeat(3, 10rem);
+            }
+
+            &  .biggs {
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;
+            }
+
+        }
+
+         
+
+        &  .infos {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            @media screen and (max-width: $bp-small) {
+                display: flex;
+                flex-direction: column;
+            }
+            &  .comm {
+                margin-right: 5rem;
+                &  h2 {
+                    font-size: 10rem;
+                    @media screen and (max-width: $bp-small) {
+                       font-size: 6rem;
+                       margin-bottom: 3rem;
+                    }
+                }
+            }
+            &  .lef {
+                &  h2 {
+                    font-size: 10rem;
+                    @media screen and (max-width: $bp-small) {
+                        font-size: 6rem;
+                     }
+                }
+            }
+        }
+    }
+    &  .grow-together {
+        grid-column: 1 / -1;
+        background-color: $l-blue;
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+        }
+           
+        &  .phot {
+            grid-column: 1 / -1;
+            background-color: $white;
+            margin-bottom: -1rem;
+
+            &  .image {
+                width: 100%;
+                height: 100%;
+                margin-bottom: -1rem;
+            }
+           
+        }
+       
+        
+        &  .content {
+            grid-row: 2 / 3;
+            padding: 5rem 0;
+            height: 100%;
+        }
+
+        display: grid;
+        grid-template-columns: minmax(10rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(10rem, 1fr) ;
+        grid-template-rows: repeat(3, min-content);
+        justify-content: center;
+
+        &  .content {
+            grid-column: middle-start / middle-end;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 2rem;
+
+            @media screen and (max-width: $bp-small) {
+                grid-template-columns: 1fr;
+            }
+
+            &  .photo {
+                background-color: $l-blue;
+                @media screen and (max-width: $bp-small) {
+                    grid-row: 1 / 2;
+
+                }
+            }
+        }
+    }
+    &  .conversation {
+        padding: 5rem 0;
+        grid-column: middle-start / middle-end;
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+            grid-template-columns: 1fr;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 2rem;
+        @media screen and (max-width: $bp-small) {
+            padding: 2rem 10rem;
+        }
+    }
+    &  .users {
+        grid-column: 1 / -1;
+        background-color: $l-blue;
+        display: grid;
+        grid-template-columns: minmax(10rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(10rem, 1fr) ;
+        justify-content: center;
+        grid-template-rows: repeat(3, min-content);
+
+        &  .phot {
+            grid-column: 1 / -1;
+            background-color: $white;
+            margin-bottom: -1rem;
+
+            &  .image {
+                width: 100%;
+                height: 100%;
+                margin-bottom: -1rem;
+            }
+        }
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+            
+        }
+        
+
+        &  .content {
+            grid-column: middle-start / middle-end;
+            padding: 5rem 0;
+            @media screen and (max-width: $bp-small) {
+                grid-column: 1 / -1;
+                grid-template-columns: 1fr;
+                padding: 2rem 8rem;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 2rem;
+
+            &  .photo {
+                @media screen and (max-width: $bp-small) {
+                    grid-row: 1 / -1;
+                    
+                }
+            }
+        }
+       
+    }
+    &  .ready-cta {
+        grid-column: middle-start / middle-end;
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+        }
+    }
+    &  .footer {
+        background-color: $cyan;
+        grid-column: 1 / -1;
+        color: white;
+
+        @media screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+        }
+        display: grid;
+        grid-template-columns: minmax(10rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(10rem, 1fr) ;
+        grid-template-rows: repeat(2, min-content);
+        @media screen and (max-width: $bp-small) {
+            grid-template-columns: minmax(2rem, 1fr) [middle-start] repeat(8, minmax(1rem, 18rem)) [middle-end] minmax(2rem, 1fr) ;
+        }
+        justify-content: center;
+
+        &  .phot {
+            grid-column: 1 / -1;
+            background-color: $white;
+            margin-bottom: -1rem;
+
+            &  .image {
+                width: 100%;
+                height: 100%;
+                margin-bottom: -1rem;
+            }
+        
+        }
+
+        &  .content {
+            grid-column: middle-start / middle-end;
+            
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: $bp-small) {
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                padding: 0 2rem;
+            }
+        }
+    }
+
+}
