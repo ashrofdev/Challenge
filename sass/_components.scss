@@ -20,6 +20,10 @@
                 font-family: 'Poppins', sans-serif;
                 font-weight: 700;
                 color: $cyan;
+                
+                @media screen and (max-width: $bp-small) {
+                    font-size: 3rem;
+                }
             }
            
         }
@@ -58,6 +62,10 @@
             font-weight: 700;
             text-align: center;
             color: $cyan;
+            
+            @media screen and (max-width: $bp-small) {
+                font-size: 3rem;
+            }
         }
         &  p {
             padding: 3rem 30rem;
@@ -293,15 +301,17 @@
                     border: none;
                     border-radius: 3px;
                     transition: all .5s;
+                    @media screen and (max-width: $bp-largest) {
+                        margin-left: 1rem;
+                    }
+                    @media screen and (max-width: $bp-large) {
+                        margin-left: 0;
+                    }
+
                     @media screen and (max-width: $bp-small) {
                         margin-left: 10rem;
                     }
-                    @media screen and (max-width: $bp-largest) {
-                        margin-left: 5rem;
-                    }
-                    @media screen and (max-width: $bp-large) {
-                        margin-left: 3rem;
-                    }
+                    
 
                     &:focus {
                         border: 3px solid $primary;
@@ -316,6 +326,11 @@
                     font-size: 1.4rem;
                     color: $white;
                     transition: all .2s;
+
+                    @media screen and (max-width: $bp-large) {
+                        margin-left: 0;
+                    }
+
                     @media screen and (max-width: $bp-small) {
                         margin-left: 20rem;
                         margin-top: 1rem;

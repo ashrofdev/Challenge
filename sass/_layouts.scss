@@ -115,7 +115,7 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            grid-gap: 2rem;
+            grid-gap: 5rem;
 
             @media screen and (max-width: $bp-small) {
                 grid-template-columns: 1fr;
@@ -142,7 +142,7 @@
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        grid-gap: 2rem;
+        grid-gap: 5rem;
         @media screen and (max-width: $bp-small) {
             padding: 2rem 10rem;
         }
@@ -185,7 +185,7 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            grid-gap: 2rem;
+            grid-gap: 5rem;
 
             &  .photo {
                 @media screen and (max-width: $bp-small) {

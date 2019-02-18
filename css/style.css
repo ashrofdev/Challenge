@@ -34,6 +34,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #00252e; }
+    @media screen and (max-width: 37.5em) {
+      .container .head .logo-side h1 {
+        font-size: 3rem; } }
   .container .head .cta-side {
     align-self: center; }
     .container .head .cta-side .link {
@@ -60,6 +63,9 @@ body {
     font-weight: 700;
     text-align: center;
     color: #00252e; }
+    @media screen and (max-width: 37.5em) {
+      .container .get-started h1 {
+        font-size: 3rem; } }
   .container .get-started p {
     padding: 3rem 30rem;
     text-align: center;
@@ -211,15 +217,15 @@ body {
     border: none;
     border-radius: 3px;
     transition: all .5s; }
+    @media screen and (max-width: 75em) {
+      .container .footer .photo form .input {
+        margin-left: 1rem; } }
+    @media screen and (max-width: 62.5em) {
+      .container .footer .photo form .input {
+        margin-left: 0; } }
     @media screen and (max-width: 37.5em) {
       .container .footer .photo form .input {
         margin-left: 10rem; } }
-    @media screen and (max-width: 75em) {
-      .container .footer .photo form .input {
-        margin-left: 5rem; } }
-    @media screen and (max-width: 62.5em) {
-      .container .footer .photo form .input {
-        margin-left: 3rem; } }
     .container .footer .photo form .input:focus {
       border: 3px solid #ff52bf; }
   .container .footer .photo form .button {
@@ -231,6 +237,9 @@ body {
     font-size: 1.4rem;
     color: #fff;
     transition: all .2s; }
+    @media screen and (max-width: 62.5em) {
+      .container .footer .photo form .button {
+        margin-left: 0; } }
     @media screen and (max-width: 37.5em) {
       .container .footer .photo form .button {
         margin-left: 20rem;
@@ -336,7 +345,7 @@ body {
       grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: center;
-      grid-gap: 2rem; }
+      grid-gap: 5rem; }
       @media screen and (max-width: 37.5em) {
         .container .grow-together .content {
           grid-template-columns: 1fr; } }
@@ -352,7 +361,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    grid-gap: 2rem; }
+    grid-gap: 5rem; }
     @media screen and (max-width: 37.5em) {
       .container .conversation {
         grid-column: 1 / -1;
@@ -385,7 +394,7 @@ body {
       grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: center;
-      grid-gap: 2rem; }
+      grid-gap: 5rem; }
       @media screen and (max-width: 37.5em) {
         .container .users .content {
           grid-column: 1 / -1;
